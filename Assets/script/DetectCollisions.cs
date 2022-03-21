@@ -8,6 +8,10 @@ public class DetectCollisions : MonoBehaviour
 {
     private Gamemanager GameManagerScript;
 
+ 
+    
+
+
     private void Start()
     {
 
@@ -24,6 +28,7 @@ public class DetectCollisions : MonoBehaviour
             Destroy(gameObject);
             Debug.Log($"+2");
             GameManagerScript.contador();
+           
             
 
         }
