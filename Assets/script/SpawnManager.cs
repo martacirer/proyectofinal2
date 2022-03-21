@@ -29,7 +29,8 @@ public class SpawnManager : MonoBehaviour
         return new Vector3(randomX, 0, spawnZ);
     }
 
-
+  
+    // instanciar los golems en un spawn aleatorio
     public void SpawnGolem()
     {
         int randomIndex = Random.Range(0, golemPrefabs.Length);

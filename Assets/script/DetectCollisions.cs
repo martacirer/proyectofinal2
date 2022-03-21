@@ -20,7 +20,7 @@ public class DetectCollisions : MonoBehaviour
     }
     private void OnCollisionEnter(Collision otherCollider)
     {   
-      
+      // si chocan se destruyen los dos y suma 2
         if (gameObject.CompareTag("Obstacle") && otherCollider.gameObject.CompareTag("proyectil"))
         {
             
@@ -32,7 +32,7 @@ public class DetectCollisions : MonoBehaviour
             
 
         }
-
+        // si el player choca con el recolectable,desparacece el recolectable y suma 1
         if (gameObject.CompareTag("Player") && otherCollider.gameObject.CompareTag("recolectable"))
         {
 
